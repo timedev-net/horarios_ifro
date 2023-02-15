@@ -26,58 +26,230 @@ class _FormularioState extends State<RelatorioHorario> {
         appBar: AppBar(
           title: Text(widget.title),
         ),
-        body: SingleChildScrollView(
-          child: Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                Padding(
-                  padding: const EdgeInsets.all(20.0),
-                  child: TextField(
-                    controller: disciplina_name,
-                    decoration: InputDecoration(
-                      labelText: 'Nome da RelatorioHorario',
-                    ),
+        body: Padding(
+          padding: EdgeInsets.all(20.0),
+          child: SingleChildScrollView(
+              child: Column(
+            children: [
+              Row(
+                children: [
+                  Column(
+                    children: [
+                      Row(
+                        children: [
+                          const Text("Seg"),
+                        ],
+                      ),
+                      Row(
+                        children: [
+                          const Text("19:00h"),
+                          Container(
+                              margin: const EdgeInsets.all(8),
+                              width: 150,
+                              height: 150,
+                              color: Color.fromARGB(255, 37, 103, 6),
+                              child: Column(
+                                children: [
+                                  const Text("Prog. Orientado a Objetos"),
+                                  const Text("Prof. Willians"),
+                                  const Text("Lab 03"),
+                                ],
+                              )),
+                        ],
+                      ),
+                      Row(
+                        children: [
+                          const Text("19:50h"),
+                          Container(
+                            margin: const EdgeInsets.all(8),
+                            width: 150,
+                            height: 150,
+                            color: Colors.teal[100],
+                            child:
+                                const Text("He'd have you all unravel at the"),
+                          ),
+                        ],
+                      ),
+                      Row(
+                        children: [
+                          const Text("20:50h"),
+                          Container(
+                            margin: const EdgeInsets.all(8),
+                            width: 150,
+                            height: 150,
+                            color: Colors.teal[100],
+                            child:
+                                const Text("He'd have you all unravel at the"),
+                          )
+                        ],
+                      ),
+                      Row(
+                        children: [
+                          const Text("21:40h"),
+                          Container(
+                            margin: const EdgeInsets.all(8),
+                            width: 150,
+                            height: 150,
+                            color: Colors.teal[100],
+                            child:
+                                const Text("He'd have you all unravel at the"),
+                          )
+                        ],
+                      ),
+                    ],
                   ),
-                ),
-                ElevatedButton(
-                  child: Text('Salvar'),
-                  onPressed: () {
-                    // print('Nome: ${task_name.text}');
-
-                    disciplinas.add(Disciplina(1, disciplina_name.text));
-                    setState(() {});
-                    // print(tasks[0].description);
-                  },
-                ),
-                // ElevatedButton(
-                //   onPressed: () {
-                //     Navigator.pop(context);
-                //   },
-                //   child: const Text('Go back!'),
-                // ),
-                ElevatedButton(
-                  onPressed: () {
-                    disciplinas.removeLast();
-                    setState(() {});
-                  },
-                  child: const Text('Remover'),
-                ),
-                Container(
-                  width: 300,
-                  height: 300,
-                  child: ListView.builder(
-                    itemCount: disciplinas.length,
-                    itemBuilder: (context, index) {
-                      return ListTile(
-                        title: Text(disciplinas[index].nome),
-                      );
-                    },
+                  Column(
+                    children: [
+                      Row(
+                        children: [
+                          const Text("Ter"),
+                        ],
+                      ),
+                      Container(
+                        margin: const EdgeInsets.all(8),
+                        width: 150,
+                        height: 150,
+                        color: Colors.teal[100],
+                        child: const Text("He'd have you all unravel at the"),
+                      ),
+                      Container(
+                        margin: const EdgeInsets.all(8),
+                        width: 150,
+                        height: 150,
+                        color: Colors.teal[100],
+                        child: const Text("He'd have you all unravel at the"),
+                      ),
+                      Container(
+                        margin: const EdgeInsets.all(8),
+                        width: 150,
+                        height: 150,
+                        color: Colors.teal[100],
+                        child: const Text("He'd have you all unravel at the"),
+                      ),
+                      Container(
+                        margin: const EdgeInsets.all(8),
+                        width: 150,
+                        height: 150,
+                        color: Colors.teal[100],
+                        child: const Text("He'd have you all unravel at the"),
+                      ),
+                    ],
                   ),
-                ),
-              ],
-            ),
-          ),
+                  Column(
+                    children: [
+                      Row(
+                        children: [
+                          const Text("Qua"),
+                        ],
+                      ),
+                      Container(
+                        margin: const EdgeInsets.all(8),
+                        width: 150,
+                        height: 150,
+                        color: Colors.teal[100],
+                        child: const Text("He'd have you all unravel at the"),
+                      ),
+                      Container(
+                        margin: const EdgeInsets.all(8),
+                        width: 150,
+                        height: 150,
+                        color: Colors.teal[100],
+                        child: const Text("He'd have you all unravel at the"),
+                      ),
+                      Container(
+                        margin: const EdgeInsets.all(8),
+                        width: 150,
+                        height: 150,
+                        color: Colors.teal[100],
+                        child: const Text("He'd have you all unravel at the"),
+                      ),
+                      Container(
+                        margin: const EdgeInsets.all(8),
+                        width: 150,
+                        height: 150,
+                        color: Colors.teal[100],
+                        child: const Text("He'd have you all unravel at the"),
+                      ),
+                    ],
+                  ),
+                  Column(
+                    children: [
+                      Row(
+                        children: [
+                          const Text("Qui"),
+                        ],
+                      ),
+                      Container(
+                        margin: const EdgeInsets.all(8),
+                        width: 150,
+                        height: 150,
+                        color: Colors.teal[100],
+                        child: const Text("He'd have you all unravel at the"),
+                      ),
+                      Container(
+                        margin: const EdgeInsets.all(8),
+                        width: 150,
+                        height: 150,
+                        color: Colors.teal[100],
+                        child: const Text("He'd have you all unravel at the"),
+                      ),
+                      Container(
+                        margin: const EdgeInsets.all(8),
+                        width: 150,
+                        height: 150,
+                        color: Colors.teal[100],
+                        child: const Text("He'd have you all unravel at the"),
+                      ),
+                      Container(
+                        margin: const EdgeInsets.all(8),
+                        width: 150,
+                        height: 150,
+                        color: Colors.teal[100],
+                        child: const Text("He'd have you all unravel at the"),
+                      ),
+                    ],
+                  ),
+                  Column(
+                    children: [
+                      Row(
+                        children: [
+                          const Text("Sex"),
+                        ],
+                      ),
+                      Container(
+                        margin: const EdgeInsets.all(8),
+                        width: 150,
+                        height: 150,
+                        color: Colors.teal[100],
+                        child: const Text("He'd have you all unravel at the"),
+                      ),
+                      Container(
+                        margin: const EdgeInsets.all(8),
+                        width: 150,
+                        height: 150,
+                        color: Colors.teal[100],
+                        child: const Text("He'd have you all unravel at the"),
+                      ),
+                      Container(
+                        margin: const EdgeInsets.all(8),
+                        width: 150,
+                        height: 150,
+                        color: Colors.teal[100],
+                        child: const Text("He'd have you all unravel at the"),
+                      ),
+                      Container(
+                        margin: const EdgeInsets.all(8),
+                        width: 150,
+                        height: 150,
+                        color: Colors.teal[100],
+                        child: const Text("He'd have you all unravel at the"),
+                      ),
+                    ],
+                  ),
+                ],
+              )
+            ],
+          )),
         ));
   }
 }
